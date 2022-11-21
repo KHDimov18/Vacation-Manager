@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Teams</h1>
+<table>
+    <tr>
+        <th>Team name</th>
+        <th>Project in progress</th>
+        <th>Developers</th>
+        <th>Team leader</th>
+    </tr>
+    <tr th:each="team: ${teams}">
+        <td th:text="${team.teamName}" />
+        <td th:text="${team.projectInProgress}" />
+        <td th:text="${team.developers}" />
+        <td th:text="${team.teamLeader}" />
+    </tr>
+</table>
+</body>
+</html>

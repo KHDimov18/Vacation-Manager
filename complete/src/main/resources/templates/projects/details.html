@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Project <span th:utext="${item.projectName}"></span></h1>
+<label>Project name: <span th:utext="${item.projectName}"></span></label><br>
+<label>Description: <span th:utext="${item.description}"></span></label><br>
+<label>Teams working on project: <span th:utext="${item.teamsWorkingOnProject}"></span></label><br>
+
+</body>
+</html>

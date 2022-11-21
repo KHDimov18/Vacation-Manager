@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Vacation <span th:utext="${item.startDate}"></span></h1>
+<label>Start date: <span th:utext="${item.startDate}"></span></label><br>
+<label>End date: <span th:utext="${item.endDate}"></span></label><br>
+<label>Date of request: <span th:utext="${item.dateOfRequest}"></span></label><br>
+<label>Half day vacation status: <span th:utext="${item.halfDayVacation}"></span></label><br>
+<label>Approve status: <span th:utext="${item.approved}"></span></label><br>
+<label>Applicant: <span th:utext="${item.applicant}"></span></label><br>
+
+</body>
+</html>
